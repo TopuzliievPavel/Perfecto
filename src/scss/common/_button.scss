@@ -1,0 +1,61 @@
+.btn {
+  @include multi-transition (color, background-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  &--large {
+    padding: 16px 27px;
+  }
+
+  &--small {
+    padding: 12px 17px;
+  }
+  &--link {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    &-primary {
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+      color: $col-primary;
+    }
+    &:hover {
+      color: $col-primary-hover;
+    }
+  }
+  &--primary {
+    display: inline-block;
+    vertical-align: top;
+    background-color: $col-primary;
+    color: $white;
+    &:hover {
+      background-color: $col-primary-hover;
+    }
+  }
+  &--gray {
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+    color: $col-txt;
+    border: $secondary-border;
+    &:hover {
+      background-color: $col-primary-hover;
+      color: $white;
+    }
+  }
+  &--outline {
+    @include multi-transition (color, background-color, border-color);
+    display: inline-block;
+    vertical-align: top;
+    border: $default-border;
+    text-align: center;
+    color: inherit;
+    background-color: transparent;
+    &:hover {
+      background-color: $col-primary;
+      color: $white;
+      border-color: $col-primary;
+    }
+  }
+}

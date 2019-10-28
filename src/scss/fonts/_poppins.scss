@@ -1,0 +1,30 @@
+$folder: 'Poppins';
+
+@font-face {
+  font-family: 'poppins';
+  src: url('#{$font-path}/#{$folder}/poppins-regular/poppins-regular.woff2') format('woff2'),
+  url('#{$font-path}/#{$folder}/poppins-regular/poppins-regular.woff') format('woff'),
+  url('#{$font-path}/#{$folder}/poppins-regular/poppins-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('#{$font-path}/#{$folder}/poppins-medium/poppins-medium.woff2') format('woff2'),
+  url('#{$font-path}/#{$folder}/poppins-medium/poppins-medium.woff') format('woff'),
+  url('#{$font-path}/#{$folder}/poppins-medium/poppins-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'poppins';
+  src: url('#{$font-path}/#{$folder}/poppins-semi-bold/poppins-semi-bold.woff2') format('woff2'),
+  url('#{$font-path}/#{$folder}/poppins-semi-bold/poppins-semi-bold.woff') format('woff'),
+  url('#{$font-path}/#{$folder}/poppins-semi-bold/poppins-semi-bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

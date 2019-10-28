@@ -1,0 +1,104 @@
+$breakpoint: (
+  'xxlarge': 1440px,
+  'xlarge': 1200px,
+  'large': 1024px,
+  'premedium': 768px,
+  'medium': 640px,
+  'presmall': 480px,
+  'small': 320px
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// Colors
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+$white: #fff;
+$black: #000;
+
+$col-page_title: #404040;
+$col-page_title2: #444;
+$col-txt: #808080;
+$col-txt2: #8c8c8c;
+$disable-txt: #a6a6a6;
+
+$bg-footer: #192330;
+$bg-footer: #192330;
+$bg-section: #fafafa;
+
+$placeholder: $col-txt;
+
+$col-primary: #009688;
+$col-primary-hover: #039285;
+$col-primary-hover: #039285;
+
+$col-success: #03a9f4;
+$col-success-hover: #0177b5;
+
+$col-aqua: #60c2df;
+$col-aqua-hover: #59bbd8;
+
+$col-info: #f0af53;
+$col-info-dark: #e9a84c;
+
+$col-danger-dark: #d04f4c;
+$col-danger-light: #db5a57;
+
+$col-footer-menu-hover: #192330;
+$col-icon-hover: #31aae2;
+
+$col-minus: #969595;
+
+$col-gradient-green-light: rgba(96,186,96, .9);
+$col-gradient-green-dark: rgb(89,179,89);
+
+
+$box-shad: 0 2px 7px 0px rgba(#000, .3);
+
+$font-path: '../fonts';
+
+/*----- Form var -----*/
+$col-border: $white;
+$col-border-gray: #e3e3e3;
+$col-focus: #7f7f7f;
+$col-error: #f8857c;
+$col-placeholder: #c6c6c6;
+$secondary-border: 1px solid $col-border-gray;
+$default-border: 2px solid $col-border;
+$input-height: 2.5rem;
+$input-holder-margin: .75rem;
+
+/*----- Global layout -----*/
+$collapse-menu: 1200px;
+$sidebar-indent: 10px;
+$vert-indent: 20px;
+
+
+/*----- Font -----*/
+$base-font-sans-serif: 'poppins', 'Helvetica',  'Arial', sans-serif;
+$font-awesome: 'FontAwesome';
+$font-size-sm: 13px;
+$font-size-base: 14px;
+
+/*----- Body -----*/
+$base-text-color: $col-txt;
+$base-background-color: $white;
+$global-font-size: 14px;
+$line-height-base: 1.7;
+$base-font-family: $base-font-sans-serif;
+
+$vertical-rhythm: ($line-height-base * 1em);
+
+$base-min-width: 320px;
+
+$animation-speed: .3s; // for mixin

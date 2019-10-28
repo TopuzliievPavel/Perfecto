@@ -1,0 +1,39 @@
+/*----- Demos -----*/
+
+.demos {
+  padding-top: 50px;
+
+  @include media(">=premedium") {
+    padding-top: 100px;
+    position: relative;
+    min-height: 835px;
+  }
+}
+
+.demos__img {
+  @include media(">=premedium") {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+}
+.demos__heading {
+  text-align: center;
+  margin-bottom: 62px;
+
+  @include media(">=premedium") {
+    margin-bottom: 114px;
+  }
+}
+
+.demos__title {
+  font-size: 1.4rem;
+  @include media(">=premedium") {
+    font-size: 2rem;
+  }
+  @include media(">=large") {
+    font-size: 2.6rem;
+  }
+}

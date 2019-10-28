@@ -1,0 +1,219 @@
+.speciality {
+  overflow: hidden;
+  padding: 50px 0;
+  background-color: $bg-section;
+  @include media(">=premedium") {
+    padding: 206px 0 150px;
+  }
+}
+
+.speciality-wrap {
+ @include media(">=premedium") {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+ }
+}
+
+.speciality__item {
+  padding: 0 15px;
+  @include media(">=premedium") {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.speciality__title {
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: $col-page_title;
+  @include media(">=premedium") {
+    margin-bottom: 78px;
+  }
+}
+
+.tabs {
+  margin-bottom: 20px;
+  @include media(">=premedium") {
+    margin-bottom: 0;
+  }
+}
+.tabs__item {
+  background-color: $white;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.tabs__title {
+  padding: 19px 0 14px 61px;
+  text-transform: capitalize;
+  font-size: $font-size-base;
+  font-weight: 400;
+  .active & {
+    color: $col-primary-hover;
+  }
+}
+
+.tabs__minus-wrap {
+  background-color: #f1f1f1;
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs__minus {
+  background-color: $col-minus;
+  width: 11px;
+  height: 1px;
+}
+
+.tabs__body {
+  padding: 25px 32px 25px 37px;
+  display: none;
+  .active & {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tabs__img {
+  flex: 0 0 81px;
+  max-width: 81px;
+  margin-right: 15px;
+}
+
+.skills__title {
+  color: #757575;
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.skills {
+  padding-left: 30px;
+}
+
+.skills__content {
+  max-width: 526px;
+  min-height: 27px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background: $white;
+
+  .fas {
+    width: auto;
+    height: auto;
+    cursor: auto;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    font-size: 14px;
+    transform: translateY(-50%);
+  }
+
+  .fa-tag {
+    transform: translateY(-50%) rotate(90deg);
+    color: #60ba60;
+  }
+
+  .fa-android {
+    color: #60c2df;
+  }
+
+  .fa-html5 {
+    color: #f0af53;
+  }
+}
+
+.skills__rate {
+  height: 13px;
+
+  &--success {
+    width: 451px;
+    background: linear-gradient(-45deg,
+      #59b359 5%, #60ba60 10%,
+      #59b359 15%, #60ba60 20%,
+      #59b359 25%, #60ba60 30%,
+      #59b359 35%, #60ba60 40%,
+      #59b359 45%, #60ba60 50%,
+      #59b359 55%, #60ba60 60%,
+      #59b359 65%, #60ba60 70%,
+      #59b359 75%, #60ba60 80%,
+      #59b359 85%, #60ba60 90%,
+      #59b359 95%, #60ba60 100%
+    );
+    background-size: 70px 70px;
+  }
+
+  &--info {
+    width: 393px;
+    background: linear-gradient(-45deg,
+      #59bbd8 5%, #60c2df 10%,
+      #59bbd8 15%, #60c2df 20%,
+      #59bbd8 25%, #60c2df 30%,
+      #59bbd8 35%, #60c2df 40%,
+      #59bbd8 45%, #60c2df 50%,
+      #59bbd8 55%, #60c2df 60%,
+      #59bbd8 65%, #60c2df 70%,
+      #59bbd8 75%, #60c2df 80%,
+      #59bbd8 85%, #60c2df 90%,
+      #59bbd8 95%, #60c2df 100%
+    );
+    background-size: 70px 70px;
+  }
+
+  &--warning {
+    width: 275px;
+    background: linear-gradient(-45deg,
+      #e9a84c 5%, #f0af53 10%,
+      #e9a84c 15%, #f0af53 20%,
+      #e9a84c 25%, #f0af53 30%,
+      #e9a84c 35%, #f0af53 40%,
+      #e9a84c 45%, #f0af53 50%,
+      #e9a84c 55%, #f0af53 60%,
+      #e9a84c 65%, #f0af53 70%,
+      #e9a84c 75%, #f0af53 80%,
+      #e9a84c 85%, #f0af53 90%,
+      #e9a84c 95%, #f0af53 100%
+    );
+    background-size: 70px 70px;
+  }
+
+  &--danger {
+    width: 344px;
+    background: linear-gradient(-45deg,
+      #d04f4c 5%, #db5a57 10%,
+      #d04f4c 15%, #db5a57 20%,
+      #d04f4c 25%, #db5a57 30%,
+      #d04f4c 35%, #db5a57 40%,
+      #d04f4c 45%, #db5a57 50%,
+      #d04f4c 55%, #db5a57 60%,
+      #d04f4c 65%, #db5a57 70%,
+      #d04f4c 75%, #db5a57 80%,
+      #d04f4c 85%, #db5a57 90%,
+      #d04f4c 95%, #db5a57 100%
+    );
+    background-size: 70px 70px;
+  }
+}
+
+.skills__percent {
+  color: $col-minus;
+}
+
+.skills__img {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  font-size: 14px;
+  transform: translateY(-50%);
+}

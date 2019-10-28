@@ -1,0 +1,83 @@
+/*----- Service -----*/
+
+.service {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: $bg-section;
+
+  @include media(">=premedium") {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.service-wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @include media(">=premedium") {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 30px;
+
+  .fas {
+    color: #343434;
+    cursor: auto;
+    font-size: 30px;
+    @include media(">=premedium") {
+      font-size: 50px;
+    }
+  }
+
+  @include media(">=premedium") {
+    flex: 1 1 auto;
+    max-width: 50%;
+    &:hover {
+      .fas {
+        color: $col-primary;
+      }
+    }
+  }
+
+  @include media(">=large") {
+    flex: 1 1 auto;
+    max-width: 33.33%;
+  }
+
+  @include media(">=xlarge") {
+    flex: 1 1 auto;
+    max-width: 25%;
+  }
+}
+
+.card__img {
+  margin-bottom: 10px;
+  line-height: 1;
+
+  @include media(">=premedium") {
+    margin-bottom: 40px;
+  }
+}
+
+.card__title {
+  color: $col-page_title2;
+  font-size: 1.25rem;
+  margin-bottom: 21px;
+  @include media(">=premedium") {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+  @include media(">=large") {
+    margin-bottom: 40px;
+    font-size: 1.57rem;
+  }
+}
